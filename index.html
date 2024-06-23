@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/8c881c96b4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Karan's Portfolio</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="name"><span id="name">K</span>aran</h1>
+      <nav>
+        <ul id="sidemenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </nav>
+    </header>
+
+    <section id="home" class="section">
+      <div class="container">
+        <div class="header-text">
+          <h1>
+            Hi, I'm <span>Karan</span> <br />
+            Full stack developer
+          </h1>
+          <div>
+            <img src="src/portfolio_image.png" alt="Portfolio Image" class="responsive-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="src/portfolio_image3.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi, I'm Karan, a passionate UI/UX Designer based in Faridabad. I
+              have a strong foundation in programming and problem-solving, with
+              a focus on Java, data structures, and algorithms. Throughout my
+              academic journey at Guru Jambheshwer University of Science and
+              Technology, Hisar, I've honed my skills in object-oriented
+              programming, database management systems, and web development
+              technologies like HTML, CSS, and JavaScript..
+            </p>
+
+            <p>
+              I'm dedicated to creating intuitive and user-friendly designs that
+              not only solve problems but also deliver delightful experiences.
+              My goal is to bridge the gap between technology and user needs,
+              making the digital world more accessible and enjoyable for
+              everyone.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>programming Language</span><br />Java, JavaScript,
+                  Python
+                </li>
+                <li>
+                  <span>Problem solving</span><br />Data Structures Algorithm
+                </li>
+                <li>
+                  <span>Fundamentals</span><br />Object oriented programming ,
+                  DBMS , My Sql
+                </li>
+                <li>
+                  <span>Development</span><br />HTML , CSS , JavaScript, MERN
+                  stack
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>Graduation</span><br />B.Tech <br />CGPA-7.0<br />
+                  Guru Jambheshwer University of science and technology Hisar
+                  (2019-2023)
+                </li>
+                <li>
+                  <span>Sr. secondary Education(HBSE)</span><br />B.S Memorial
+                  sr. sec school (2017-2018)
+                </li>
+                <li>
+                  <span>secondary Education(HBSE)</span><br />DVN Public high
+                  school (2016-2017)
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li><span>Fresher</span><br />Fresher</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-react"></i>
+            <h2>Web Design</h2>
+            <h3 class="sub-heading">Crafting Digital Experiences</h3>
+            <p>
+              In the digital age, a well-designed website is your virtual
+              storefront. I specialize in creating visually appealing,
+              user-friendly websites that not only captivate visitors but also
+              deliver a seamless browsing experience.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App design</h2>
+            <h3 class="sub-heading">Bringing Ideas to Life</h3>
+            <p>
+              Mobile apps have become an integral part of our lives. My
+              expertise in app design involves translating your vision into a
+              stunning, intuitive, and engaging user interface.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>UI/UX Design</h2>
+            <h3 class="sub-heading">Enhancing User Satisfaction</h3>
+            <p>
+              User interface (UI) and user experience (UX) are at the heart of
+              every successful digital product. I'm committed to designing
+              interfaces that not only look great but also function intuitively.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects">
+      <div class="container">
+        <h1 class="subtitile">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="src/project_image_chat.jfif" alt="" />
+            <div class="layer">
+              <h3>Chat App</h3>
+              <p>
+                It is a full stack application allowing users to live chat with
+                others user with proper user authentication and authorization.
+                It also have a functionality of creating groups add members
+                remove members. I have used react for UI and mongoDB for
+                database.
+              </p>
+              <a href="https://mern-chat-app-98vj.onrender.com/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="src/project_image_yelp.jpg" alt="" />
+            <div class="layer">
+              <h3>Yelp Camp</h3>
+              <p>
+                It is a full stack application allowing users to live chat with
+                others user with proper user authentication and authorization.
+                It also have a functionality of creating groups add members
+                remove members. I have used react for UI and mongoDB for
+                database.
+              </p>
+              <a href="https://mern-chat-app-98vj.onrender.com/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="src/project_image_invoice.png" alt="" />
+            <div class="layer">
+              <h3>Invoice maker</h3>
+              <p>
+                It is a full stack application allowing users to live chat with
+                others user with proper user authentication and authorization.
+                It also have a functionality of creating groups add members
+                remove members. I have used react for UI and mongoDB for
+                database.
+              </p>
+              <a href=""
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href=""><button class="btn">Show more</button></a>
+      </div>
+    </div>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="left">
+            <h2>Contact Me</h2>
+            <p>
+              <i class="fa-solid fa-envelope"></i> Karanthakurr2001@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+918750328122</p>
+            <div class="icons">
+              <a href="https://www.linkedin.com/in/karansingh2001/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/karan321github"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.hackerrank.com/profile/karanthakurr2001"><i class="fa-brands fa-hackerrank"></i></a>
+            </div>
+            <a href="src/karan updated resume 20-may.pdf" download="" class="">
+              Download CV
+            </a>
+          </div>
+          <div class="right">
+            <form action="">
+              <input type="text" placeholder="Your Name" />
+              <input type="text" placeholder="Your Email" />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="content">
+          <p>Copyright <i class="fa-regular fa-copyright"></i> made by Karan </></p>
+    </div>
+      
+   
+
+    <script src="script.js"></script>
+  </body>
+</html>
